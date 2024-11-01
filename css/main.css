@@ -1,0 +1,189 @@
+.map-container {
+	width: 100%;
+	display: inline-block;
+}
+.map {
+	height:400px;
+	width:70%;
+	display: inline-block;
+}
+.map-sidebar ul {
+	list-style: none;
+}
+.map-sidebar {
+	display: inline-block;
+	width: 26%;
+	vertical-align: top;
+}
+#place {
+	height: 100%;
+}
+.sidebar-header {
+    border-bottom: 1px solid #ccc;
+    font-weight: bold;
+    forn: x-large;
+    width: 100%;
+}
+.iw-container  .iw-title {
+   font-family: 'Open Sans Condensed', sans-serif;
+   font-size: 22px;
+   font-weight: 400;
+   padding: 10px;
+   background-color: #336699;
+   color: white;
+   margin: 1px;
+   border-radius: 2px 2px 0 0; /* In accordance with the rounding of the default infowindow corners. */
+}
+.iw-container  {
+	background: #444 none repeat scroll 0 0;
+    color: #fff;
+}
+.gm-style-iw {
+   width: 350px !important;
+   top: 21px !important;
+   left: 0 !important;
+   border-radius: 2px 2px 0 0;
+}
+/* white background and box outline */
+.gm-style > div:first-child > div + div > div:last-child > div > div:first-child > div
+{
+    /* we have to use !important because we are overwritng inline styles */
+    background-color: transparent !important;
+    box-shadow: none !important;
+    width: auto !important;
+    height: auto !important;
+}
+
+/* arrow colour */
+.gm-style > div:first-child > div + div > div:last-child > div > div:first-child > div > div > div
+{
+    background-color: #003366 !important; 
+}
+
+/* close button */
+.gm-style > div:first-child > div + div > div:last-child > div > div:last-child
+{
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+/* image icon inside close button */
+.gm-style > div:first-child > div + div > div:last-child > div > div:last-child {
+	    right: 65px !important;
+    top: 20px !important;
+}
+.gm-style > div:first-child > div + div > div:last-child > div > div:last-child > img
+{
+    display: block;
+}
+.iw-content {
+	padding: 10px;
+}
+.place-list li {
+    border: thin solid #CCCCCC;
+    display: inline-block;
+    float: left;
+    list-style: none outside none;
+    margin-right: 10px;
+    padding: 10px;
+    width: 48%;
+	margin-top: 10px;
+}
+.list-main {
+    display: inline-block;
+    width: 100%;
+}
+.list-r {
+    display: inline-block;
+    height: 64px;
+    width: 64px;
+}
+.list-l {
+    display: inline-block;
+    font-size: 10px;
+    vertical-align: top;
+    width: 70%;
+}
+.list-l a {
+    border: medium none !important;
+}
+.list-l > a {
+    border-bottom: none !important;
+    text-decoration: none;
+}
+.list-title {
+    font-size: 15px;
+    text-decoration: none;
+}
+.place-list places li {
+    border: thin solid #CCCCCC;
+    display: inline-block;
+    float: left;
+    list-style: none outside none;
+    margin-right: 1%;
+    padding: 10px;
+    width: 48%;
+}
+.read-more {
+    float: right;
+    font-weight: bold;
+}
+.place-nave li {
+margin-right: 5px;
+    display: inline-block;
+	float:right;
+    border: thin solid #CCCCCC;
+    height: 35px;
+    padding: 0;
+    text-align: center;
+    vertical-align: text-top;
+    width: 35px;
+}
+.place-nave {
+    display: block;
+    height: 47px;
+    width: 100%;
+}
+#place-loader{
+    position: fixed;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+#place-loader img {
+    left: 50%;
+    position: relative;
+    right: ;
+    text-align: center;
+    top: 50%;
+}
+.place-filter {
+    border-bottom: thin solid #CCCCCC;
+    display: block;
+    margin-bottom: 20px;
+ 	height: 50px;
+    padding: 10px;
+}
+.filters {
+    display: inline-block;
+    float: left;
+    font-size: 14px;
+}
+.per-page {
+    display: inline-block;
+    float: right;
+    right: 0;
+    width: 8%;
+}
+
+.per-page select {
+    font-size: 14px;
+vertical-align: top;
+}
